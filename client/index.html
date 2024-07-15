@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+    <script src="socket.io.min.js"></script>
+    <script src="uuidGen.js"></script>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>CHat!</title>
+</head>
+
+<body>
+    <header>
+        <h1>CHat!</h1>
+    </header>
+    <section id="users">
+        <ul></ul>
+        <form>
+            <input type="text" id="msgName" placeholder="Name">
+            <button id="msgNameRegister" type="submit">Register</button>
+        </form>
+    </section>
+
+    <section id="chat">
+
+    </section>
+
+    <section id="msgedit" style="display: none;">
+        <form>
+            <input type="text" id="msgMessage" placeholder="Message"></input>
+            <button style="display: none;" type="submit" id="msgBtnPlan">Plan</button>
+            <button type="submit" id="msgBtnSend">Send</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
